@@ -84,15 +84,23 @@
 
               <div class="columns is-centered has-text-centered">
               <div class="column is-four-fifths">
-              <div class="content has-text-justified">
+                <div class="content has-text-justified">
 
-              <a href="https://arxiv.org/pdf/2411.16594"> (Arixiv Version) <b>From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge</b></a>
-              <br>
-               - A survey of the opportunities (<b><i>What, How and Where to judge</i></b>) and challenges (<b><i>limitations and bias of judge LLMs</i></b>) of LLM-as-a-judge.
-              <br>
-              - In this survey, we delve into the details of LLM-as-a-judge, aiming to provide a comprehensive overview of LLM-based judgment, including judgment attributes, methodologies, applications and benchmarks.
-              <!-- <br> -->
-              </div>
+                  <a href="https://arxiv.org/pdf/2411.16594"> (Arixiv Version) <b>From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge</b></a>
+                  <br>
+                   - A survey of the opportunities (<b><i>What, How and Where to judge</i></b>) and challenges (<b><i>limitations and bias of judge LLMs</i></b>) of LLM-as-a-judge.
+                  <br>
+                  - In this survey, we delve into the details of LLM-as-a-judge, aiming to provide a comprehensive overview of LLM-based judgment, including judgment attributes, methodologies, applications and benchmarks.
+                  <!-- <br> -->
+                  </div>
+
+                  <div class="content has-text-justified">
+
+                    <a href="https://arxiv.org/abs/2502.01534"> News! We released <b>Preference Leakage: A Contamination Problem in LLM-as-a-judge</b></a>
+                    <br>
+                    - In this work, we expose preference leakage, a contamination problem in LLM-as-a-judge caused by the relatedness of data generator and evaluator LLMs.
+                    <!-- <br> -->
+                    </div>
               </div>
               </div>
 
@@ -105,6 +113,138 @@
     </div>
   </section>
   
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 id="Preference Leakage: A Contamination Problem in LLM-as-a-judge" class="title is-2 publication-title">Preference Leakage: A Contamination Problem in LLM-as-a-judge
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://david-li0406.github.io/
+              ">Dawei Li</a>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=WcwrsNAAAAAJ&hl=en
+              ">Renliang Sun</a>,</span>
+              <span class="author-block">
+                <a href="https://howiehwong.github.io/
+              ">Yue Huang</a>,</span>
+              <span class="author-block">
+                <a href="https://maszhongming.github.io/
+              ">Ming Zhong</a>,</span>
+              <span class="author-block">
+                <a href="https://jiangbohan.github.io/
+              ">Bohan Jiang</a>,</span>
+              <span class="author-block">
+                <a href="https://hanj.cs.illinois.edu/
+              ">Jiawei Han</a>,</span>
+              <span class="author-block">
+                <a href="https://sites.nd.edu/xiangliang-zhang/
+              ">Xiangliang Zhang</a>,</span>
+              <span class="author-block">
+                <a href="https://web.cs.ucla.edu/~weiwang/
+              ">Wei Wang</a>,</span>
+              <span class="author-block">
+                <a href="https://www.public.asu.edu/~huanliu/
+              ">Huan Liu</a>,</span>
+              <span class="author-block">
+            </div>
+
+            <div class="is-size-5 publication-authors">
+                <div class="author-block">Arizona State University, </div>
+                <div class="author-block">University of California, Los Angeles, </div>
+                <div class="author-block">University of Notre Dame, </div>
+                <div class="author-block">University of Illinois Urbana Champaign, </div>
+            </div>
+
+    
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2502.01534" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2502.01534" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Arxiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/David-Li0406/Preference-Leakage"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+
+    <div class="container is-max-desktop">
+      <!-- Method -->
+      <!-- <br /> -->
+      <figure style="text-align: center;">
+        <img src="static/images/survey.png" alt="survey">
+      </figure>
+    </div>
+    <br>    <br>
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Large Language Models (LLMs) as judges and LLM-based data synthesis have emerged as two fundamental LLM-driven data annotation methods in model development. While their combination significantly enhances the efficiency of model training and evaluation, little attention has been given to the potential contamination brought by this new model development paradigm. In this work, we expose preference leakage, a contamination problem in LLM-as-a-judge caused by the relatedness between the synthetic data generators and LLM-based evaluators. To study this issue, we first define three common relatednesses between data generator LLM and judge LLM: being the same model, having an inheritance relationship, and belonging to the same model family. Through extensive experiments, we empirically confirm the bias of judges towards their related student models caused by preference leakage across multiple LLM baselines and benchmarks. Further analysis suggests that preference leakage is a pervasive issue that is harder to detect compared to previously identified biases in LLM-as-a-judge scenarios. All of these findings imply that preference leakage is a widespread and challenging problem in the area of LLM-as-a-judge.
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </section>
+  <section class="section"> -->
+    <!-- <br>
+    <br>
+    <div class="container is-max-desktop">
+      <figure>
+        <img src="static/images/survey.png" alt="survey">
+      </figure>
+    </div> -->
+  </section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{li2025preference,
+      title={Preference Leakage: A Contamination Problem in LLM-as-a-judge}, 
+      author={Dawei Li and Renliang Sun and Yue Huang and Ming Zhong and Bohan Jiang and Jiawei Han and Xiangliang Zhang and Wei Wang and Huan Liu},
+      year={2025},
+      eprint={2502.01534},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2502.01534}, 
+}</code></pre>
+  </div>
+</section>
 
 
   <section class="hero">
@@ -228,10 +368,6 @@
                 </span>
               </div>
             </div>
-            <!-- <div class="is-size-5 publication-authors">
-              Published at <b><i>AI Magazine 2024 (Volume 45, Issue 3, Fall 2024),
-                 <a href="http://doi.org/10.1002/aaai.12188" style="text-decoration:none"><font color="red">Highlight Article</font></a></i></b>
-            </div> -->
           </div>
         </div>
       </div>
