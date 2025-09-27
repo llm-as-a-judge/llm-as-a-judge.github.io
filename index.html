@@ -31,6 +31,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-icons-font@v1/font/simple-icons.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -87,6 +88,14 @@
                 <div class="content has-text-justified">
                   <div class="content has-text-justified">
 
+                    <a href="https://arxiv.org/abs/2502.01534"> News! We released <b>Who's Your Judge? On the Detectability of LLM-Generated Judgments</b></a>
+                    <br>
+                    - In this work, we propose and formalize the task of judgment detection and systematically investigate the detectability of LLM-generated judgments.
+                    <!-- <br> -->
+                  </div>
+
+                  <div class="content has-text-justified">
+
                     <a href="https://arxiv.org/abs/2502.01534"> News! We released <b>Preference Leakage: A Contamination Problem in LLM-as-a-judge</b></a>
                     <br>
                     - In this work, we expose preference leakage, a contamination problem in LLM-as-a-judge caused by the relatedness of data generator and evaluator LLMs.
@@ -111,7 +120,151 @@
       </div>
     </div>
   </section>
+
+  <!-- Judgment Detection -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 id="Who's Your Judge? On the Detectability of LLM-Generated Judgments" class="title is-2 publication-title">Who's Your Judge? On the Detectability of LLM-Generated Judgments
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://david-li0406.github.io/
+              ">Dawei Li</a>,</span>
+              <span class="author-block">
+                <a href="https://zhen-tan-dmml.github.io/
+              ">Zhen Tan</a>,</span>
+              <span class="author-block">
+                <a href="https://chengshuaizhao0.github.io/
+              ">Chengshuai Zhao</a>,</span>
+              <span class="author-block">
+                <a href="https://jiangbohan.github.io/
+              ">Bohan Jiang</a>,</span>
+              <span class="author-block">
+                <a href="https://baixianghuang.github.io/
+              ">Baixiang Huang</a>,</span>
+              <span class="author-block">
+                <a href="https://pingchuanma.com/
+              "><br>
+              Pingchuan Ma</a>,</span>
+              <span class="author-block">
+                <a href="https://dmml.asu.edu/members
+              ">Abdullah Alnaibari</a>,</span>
+              <span class="author-block">
+                <a href="https://www.cs.emory.edu/~kshu5/
+              ">Kai Shu</a>,</span>
+              <span class="author-block">
+                <a href="https://faculty.engineering.asu.edu/huanliu/
+              ">Huan Liu</a>,</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+                <div class="author-block">Arizona State University,
+                <div class="author-block">Emory University </div>
+            </div>
+
+    
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2502.01534" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2502.01534" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Arxiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/David-Li0406/Judgment-Detection"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/wjldw/JD-Bench"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="si si-huggingface"></i>
+                    </span>
+                    <span>Data</span>
+                    </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+
+    <div class="container is-max-desktop">
+      <!-- Method -->
+      <!-- <br /> -->
+      <figure style="text-align: center;">
+        <img src="static/images/preference_leakage.png" alt="preference_leakage">
+      </figure>
+    </div>
+    <br>    <br>
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Large Language Model (LLM)-based judgments leverage powerful LLMs to efficiently evaluate candidate content and provide judgment scores. However, the inherent biases and vulnerabilities of LLM-generated judgments raise concerns, underscoring the urgent need for distinguishing them in sensitive scenarios like academic peer reviewing. In this work, we propose and formalize the task of judgment detection and systematically investigate the detectability of LLM-generated judgments. Unlike LLM-generated text detection, judgment detection relies solely on judgment scores and candidates, reflecting real-world scenarios where textual feedback is often unavailable in the detection process. Our preliminary analysis shows that existing LLM-generated text detection methods perform poorly given their incapability to capture the interaction between judgment scores and candidate content---an aspect crucial for effective judgment detection. Inspired by this, we introduce J-Detector, a lightweight and transparent neural detector augmented with explicitly extracted linguistic and LLM-enhanced features to link LLM judges' biases with candidates' properties for accurate detection. Experiments across diverse datasets demonstrate the effectiveness of J-Detector and show how its interpretability enables quantifying biases in LLM judges. Finally, we analyze key factors affecting the detectability of LLM-generated judgments and validate the practical utility of judgment detection in real-world scenarios.
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </section>
+  <section class="section"> -->
+    <!-- <br>
+    <br>
+    <div class="container is-max-desktop">
+      <figure>
+        <img src="static/images/survey.png" alt="survey">
+      </figure>
+    </div> -->
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{li2025preference,
+        title={Preference Leakage: A Contamination Problem in LLM-as-a-judge}, 
+        author={Dawei Li and Renliang Sun and Yue Huang and Ming Zhong and Bohan Jiang and Jiawei Han and Xiangliang Zhang and Wei Wang and Huan Liu},
+        year={2025},
+        eprint={2502.01534},
+        archivePrefix={arXiv},
+        primaryClass={cs.LG},
+        url={https://arxiv.org/abs/2502.01534}, 
+  }</code></pre>
+    </div>
+  </section>
   
+
+  <!-- preference leaakge -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -246,7 +399,7 @@
   </div>
 </section>
 
-
+  <!-- LLM-as-a-judge survey -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
